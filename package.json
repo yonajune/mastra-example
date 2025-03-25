@@ -1,0 +1,19 @@
+{
+  "name": "mastra-example",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build:clean": "rm -rf ./dist",
+    "build": "npm run build:clean && tsc --noEmit false --outDir dist",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "mastra": "^0.4.2",
+    "tsconfig-paths": "~4.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "5.8.x"
+  }
+}
